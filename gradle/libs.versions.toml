@@ -14,6 +14,7 @@ okhttp = "4.12.0"
 retrofit = "2.11.0"
 gson = "2.10.1"
 coil = "3.0.1"
+koin = "4.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,6 +39,8 @@ gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 
 coil = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
 coil-network = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil" }
+
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 
 
 [plugins]

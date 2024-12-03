@@ -76,4 +76,6 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.coil)
     implementation(libs.coil.network)
+
+    implementation(libs.koin.android)
 }
