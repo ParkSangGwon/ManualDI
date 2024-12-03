@@ -5,8 +5,9 @@ import kotlinx.coroutines.flow.flow
 import ted.gun0912.manual.di.domain.DataResource
 import ted.gun0912.manual.di.domain.Movie
 import ted.gun0912.manual.di.domain.MovieRepository
+import javax.inject.Inject
 
-class MovieRepositoryImpl(
+class MovieRepositoryImpl @Inject constructor(
     private val movieRemoteDataSource: MovieRemoteDataSource,
 ) : MovieRepository {
 
