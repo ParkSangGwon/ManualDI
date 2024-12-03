@@ -2,10 +2,12 @@ package ted.gun0912.manual.di.data
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import org.koin.core.annotation.Single
 import ted.gun0912.manual.di.domain.DataResource
 import ted.gun0912.manual.di.domain.Movie
 import ted.gun0912.manual.di.domain.MovieRepository
 
+@Single
 class MovieRepositoryImpl(
     private val movieRemoteDataSource: MovieRemoteDataSource,
 ) : MovieRepository {

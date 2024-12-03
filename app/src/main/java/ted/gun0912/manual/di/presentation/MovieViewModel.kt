@@ -7,10 +7,12 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import org.koin.android.annotation.KoinViewModel
 import ted.gun0912.manual.di.domain.DataResource
 import ted.gun0912.manual.di.domain.GetMovieListUseCase
 import ted.gun0912.manual.di.ui.model.toPresentation
 
+@KoinViewModel
 class MovieViewModel(
     private val getMovieListUseCase: GetMovieListUseCase
 ) : ViewModel() {

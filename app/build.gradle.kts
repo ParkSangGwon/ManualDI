@@ -11,6 +11,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -78,4 +79,10 @@ dependencies {
     implementation(libs.coil.network)
 
     implementation(libs.koin.android)
+    implementation(libs.koin.annotations)
+    ksp(libs.koin.ksp)
+}
+
+ksp {
+    arg("KOIN_CONFIG_CHECK","true")
 }
